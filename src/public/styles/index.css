@@ -1,0 +1,186 @@
+* {
+    /*全局设置*/
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 30px;
+}
+
+body {
+    /*页面设置*/
+    background-color: #E1E0C7;
+    margin: 0px auto;
+    border: 1px solid #000;
+    width: 1000px;
+}
+
+article {
+    /*主栏中的内容栏设置*/
+    margin: 20px;
+    background-color: #F0EFE2;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 600px;
+    height: 330px;
+    display: inline-block;
+    padding: 30px;
+    line-height: 30px;
+}
+
+header {
+    /*头部*/
+    padding: 20px;
+    text-align: center;
+    background-color: #F0EFE2;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/*导航栏*/
+.links-list a {
+    /*导航栏的主样式*/
+    background-color: #f0efe2;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 20px 25px;
+    transition: 0.5s;
+}
+
+.links-list {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.links-list li {
+    float: left;
+}
+
+.links-list a:hover {
+    /*鼠标按下时*/
+    background-color: grey;
+    /*颜色不变*/
+    color: #000;
+}
+
+.links-list a:active {
+    background-color: burlywood;
+    color: red;
+}
+
+.links-list li {
+    /*去掉前面的点*/
+    list-style-type: none;
+}
+
+li.red {
+    background-color: burlywood;
+}
+
+/*主内容*/
+main {
+    text-align: center;
+}
+
+/*页脚*/
+footer {
+    border: 1px solid #000;
+    background-color: #f0efe2;
+    clear: both;
+    text-align: center;
+    padding: 20px;
+}
+
+/*页脚的链接*/
+a.foot-link {
+    color: #000;
+}
+
+a.foot-link:active {
+    color: white;
+}
+
+a.foot-link {
+    text-decoration: none;
+}
+
+/* 表单 */
+input {
+    border: #000 solid 1px;
+    height: 100px;
+    width: 400px;
+}
+
+button {
+    width: 240px;
+    height: 80px;
+}
+
+button,
+input {
+    font-size: 30px;
+}
+
+form {
+    margin: auto;
+    margin-bottom: 10px;
+    border: #000 solid 1px;
+    background-color: #F0EFE2;
+    width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+
+    /*电脑端用户*/
+    html {
+        font-size: 20px;
+    }
+
+    article {
+        width: 300px;
+        height: auto;
+        line-height: 30px;
+    }
+
+    button {
+        height: 40px;
+        width: 150px;
+        font-size: 20px;
+    }
+
+    input {
+        height: 50px;
+        width: 300px;
+        font-size: 20px;
+    }
+}
+
+div.right {
+    float: right;
+}
+
+div.right a {
+    text-decoration: none;
+}
+
+div.right a:link {
+    color: #000;
+}
+
+div.right a:active,
+div.right a:hover {
+    color: red;
+}
+
+div.right a:visited {
+    color: #000;
+}
+
+/* 导航栏外边距 */
+nav {
+    margin-top: 20px;
+}

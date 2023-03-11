@@ -1,0 +1,12 @@
+* {
+    text-align: center;
+}
+
+main {
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid black;
+    width: 500px;
+    background-color: #f0efe2;
+    border-radius: 10px;
+}

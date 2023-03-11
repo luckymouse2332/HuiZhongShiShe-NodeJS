@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="回中诗社" />
+    <link rel="icon" type="image/x-icon" href="images/logo.ico" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>回中诗社 - 关于你</title>
+</head>
+
+<body>
+    <header id="header"></header>
+    <!-- 导入关于界面的基本代码 -->
+    <script src="./scripts/nav.js"></script>
+    <!-- 导入jQuery -->
+    <script src="./scripts/jQuery.js"></script>
+    <!-- 导入请求代码 -->
+    <script src="./scripts/admin.js"></script>
+
+    <main>
+        <article>
+            <h2 id="id"></h2>
+            <h2 id="name"></h2>
+            <h2 id="aboutUser"></h2>
+        </article>
+        
+        <form>
+            <h1 style="text-align: center;">重置密码</h1>
+            <p>输入旧密码：<input id="oldPwd" type="password" placeholder="你的旧密码......" /></p>
+            <p>输入新密码：<input id="newPwd" type="password" placeholder="你的密码......" /></p>
+            <p><button class="button" type="button" style="text-align: center;">提交</button></p>
+            <p id="message"></p>
+        </form>
+
+        <!-- 添加用户 -->
+        <form id="form">
+            <p><button onclick="plusButton()">添加一个用户</button></p>
+        </form>
+    </main>
+</body>
+
+</html>
